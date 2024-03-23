@@ -56,7 +56,7 @@ app.Map("/Send", async (HttpContext httpContext) =>
             }
         }
 
-        return Results.Ok();
+        return Results.LocalRedirect("/MessageSended");
     }
     catch(Exception ex)
     {
