@@ -24,7 +24,7 @@ app.UseRouting();
 app.MapRazorPages();
 
 app.RegisterAuthentification();
-app.RegisterSender();
+app.RegisterRecipient();
 app.RegisterFiles();
 app.RegisterLinks();
 
