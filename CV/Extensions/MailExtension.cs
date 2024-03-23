@@ -16,11 +16,11 @@ namespace CV.Extensions
 
         public static MailboxAddress GetToAddress()
         {
-            if (string.IsNullOrWhiteSpace(Sender.SenderName)
-                || string.IsNullOrWhiteSpace(Sender.SenderEmail))
+            if (string.IsNullOrWhiteSpace(Recipient.RecipientName)
+                || string.IsNullOrWhiteSpace(Recipient.RecipientEmail))
                 throw new Exception("Не указано имя получателя или его почта");
 
-            return new MailboxAddress(Encoding.Default, Sender.SenderName, Sender.SenderEmail);
+            return new MailboxAddress(Encoding.Default, Recipient.RecipientName, Recipient.RecipientEmail);
         }
     }
 
