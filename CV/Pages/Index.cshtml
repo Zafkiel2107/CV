@@ -1,0 +1,283 @@
+﻿@page
+@model IndexModel
+
+@using CV.Extensions
+
+@{
+    ViewData["Title"] = "Домашняя страница";
+}
+
+<div class="wrapper">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="@Files.Profile" alt="Image">
+        </div>
+        <div class="sidebar-content">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">Навигация</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#header">Главная<i class="fa fa-home"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Обо мне<i class="fa fa-address-card"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Образование<i class="fa fa-graduation-cap"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Опыт работы<i class="fa fa-star"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Навыки<i class="fa fa-tasks"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Портфолио<i class="fa fa-briefcase"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Контакты<i class="fa fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="sidebar-footer">
+            <a href="@Links.Vk"><i class="fab fa-vk"></i></a>
+            <a href="@Links.LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="@Links.Github"><i class="fab fa fa-github"></i></a>
+            <a href="@Links.Hh"><i class="fa fa-h"></i></a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="header" id="header">
+            <div class="content-inner">
+                <p>Меня зовут</p>
+                <h1>Имя Фамилия и я ...</h1>
+                <h2></h2>
+                <div class="typed-text">Full-stack Web-developer</div>
+            </div>
+        </div>
+        <div class="large-btn">
+            <div class="content-inner">
+                <a class="btn" href="Download"><i class="fa fa-download"></i>Скачать резюме</a>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <div class="content-inner">
+                <div class="content-header">
+                    <h2>Обо мне</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-lg-5">
+                        <img src="@Files.About" alt="Image">
+                    </div>
+                    <div class="col-md-6 col-lg-7">
+                        <p>
+                            Текст
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="education" id="education">
+            <div class="content-inner">
+                <div class="content-header">
+                    <h2>Образование</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="edu-col">
+                            <span>1900</span>
+                            <h3>Магистр</h3>
+                            <h4>Университет</h4>
+                            <span>Факультет</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="edu-col">
+                            <span>1900</span>
+                            <h3>Бакалавр</h3>
+                            <h4>Университет</h4>
+                            <span>Факультет</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="edu-col">
+                            <span>1900</span>
+                            <h3>Магистр</h3>
+                            <h4>Университет</h4>
+                            <span>Факультет</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="edu-col">
+                            <span>1900</span>
+                            <h3>Среднее общее</h3>
+                            <h4>Школа</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="experience" id="experience">
+            <div class="content-inner">
+                <div class="content-header">
+                    <h2>Опыт работы</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="exp-col">
+                            <span>1900 <i>to</i> 1900</span>
+                            <h3>Компания</h3>
+                            <h4>Город, <a href="@Links.Job_2">Компания</a></h4>
+                            <h5>Full-stack Web-developer</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="exp-col">
+                            <span>1900 <i>to</i> 1900</span>
+                            <h3>Компания</h3>
+                            <h4>Город, <a href="@Links.Job_2">Компания</a></h4>
+                            <h5>Full-stack Web-developer</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills" id="skills">
+            <div class="content-inner">
+                <div class="content-header">
+                    <h2>Навыки</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="srv-col">
+                            <i class="fa fa-code"></i>
+                            <h3>Frontend</h3>
+                            <p>Frontend</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="srv-col">
+                            <i class="fa fa-server"></i>
+                            <h3>Backend</h3>
+                            <p>Backend</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="srv-col">
+                            <i class="fa fa-database"></i>
+                            <h3>Базы данных</h3>
+                            <p>Базы данных</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="srv-col">
+                            <i class="fa fa-user"></i>
+                            <h3>Софт скиллы</h3>
+                            <p>Софт скиллы</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio" id="portfolio">
+            <div class="content-inner">
+                <div class="content-header">
+                    <h2>Портфолио</h2>
+                </div>
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="@Files.Portfolio_3" class="img-fluid" alt="">
+                                <a href="@Files.Portfolio_3" class="link-preview" data-lightbox="portfolio" data-title="Название проекта" title="Предпросмотр"><i class="fa fa-eye"></i></a>
+                                <a href="@Links.Project_3" class="link-details" title="Больше деталей"><i class="fa fa-link"></i></a>
+                                <a class="portfolio-title" href="#">Приложение<span>Веб-приложение</span></a>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="@Files.Portfolio_2" class="img-fluid" alt="">
+                                <a href="@Files.Portfolio_2" class="link-preview" data-lightbox="portfolio" data-title="Название проекта" title="Предпросмотр"><i class="fa fa-eye"></i></a>
+                                <a href="@Links.Project_2" class="link-details" title="Больше деталей"><i class="fa fa-link"></i></a>
+                                <a class="portfolio-title" href="#">Приложение<span>Веб-приложение</span></a>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="@Files.Portfolio_1" class="img-fluid" alt="">
+                                <a href="@Files.Portfolio_1" class="link-preview" data-lightbox="portfolio" data-title="Название проекта" title="Предпросмотр"><i class="fa fa-eye"></i></a>
+                                <a href="@Links.Project_1" class="link-details" title="Больше деталей"><i class="fa fa-link"></i></a>
+                                <a class="portfolio-title" href="#">Приложение<span>Консольное приложение</span></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <div class="content-inner">
+                <div class="content-header">
+                    <h2>Контакты</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <p><i class="fa fa-user"></i>Имя Фамилия</p>
+                            <p><i class="fa fa-tag"></i>Full-stack Web-developer</p>
+                            <p><i class="fa fa-envelope"></i><a href="mailto:@Sender.SenderEmail">Почта для связи</a></p>
+                            <p><i class="fa fa-phone"></i><a href="tel:+79999999999">Телефон для связи</a></p>
+                            <p><i class="fa fa-map-marker"></i>Город, Россия</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form">
+                            <form action="Send" method="post">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" name="name" class="form-control" placeholder="Ваше имя" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="email" name="email" class="form-control" placeholder="Ваша почта" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control" placeholder="Тема" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="body" class="form-control" rows="5" placeholder="Сообщение"></textarea>
+                                </div>
+                                <div><button class="btn" type="submit">Отправить</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="content-inner">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+                    </div>
+                    <div class="col-md-12">
+                        <p>&copy; @DateTime.Now.ToString("D")</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
