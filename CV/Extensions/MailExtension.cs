@@ -1,4 +1,5 @@
 ﻿using MimeKit;
+using MimeKit.Text;
 using System.Text;
 
 namespace CV.Extensions
@@ -35,7 +36,7 @@ namespace CV.Extensions
             return new MimeMessage()
             {
                 Subject = form["Subject"],
-                Body = new TextPart(MimeKit.Text.TextFormat.Text) { Text = form["Body"] }
+                Body = new TextPart(TextFormat.Text) { Text = $"Почта для связи с отправителем {form["Email"]}.\n{form["Body"]}" }
             };
         }
     }
