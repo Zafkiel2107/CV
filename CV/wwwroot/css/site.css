@@ -24,6 +24,12 @@ a {
     box-shadow: none;
 }
 
+div .message-sended {
+    position: absolute;
+    width: 52%;
+    top: 50%;
+    text-align: center;
+}
 
 /**********************************/
 /****** Layout with Sidebar *******/
