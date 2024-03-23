@@ -10,14 +10,14 @@
             AuthentificationPassword = application.Configuration["Authentification:AuthentificationPassword"] ?? "";
         }
     }
-    public static class Sender
+    public static class Recipient
     {
-        public static string SenderEmail { get; private set; }
-        public static string SenderName { get; private set; }
-        public static void RegisterSender(this WebApplication application)
+        public static string RecipientEmail { get; private set; }
+        public static string RecipientName { get; private set; }
+        public static void RegisterRecipient(this WebApplication application)
         {
-            SenderEmail = application.Configuration["Sender:SenderEmail"] ?? "";
-            SenderName = application.Configuration["Sender:SenderName"] ?? "";
+            RecipientEmail = application.Configuration["Recipient:RecipientEmail"] ?? "";
+            RecipientName = application.Configuration["Recipient:RecipientName"] ?? "";
         }
     }
     public static class Files
